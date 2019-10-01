@@ -6,7 +6,7 @@ public class ListaJogos {
 
     private static ArrayList<Jogo> listaJogos = new ArrayList<>();
 
-    public static void addJogo(){
+    public static void addJogo(Jogo j){
         listaJogos.add(j);
     }
     public static ArrayList<Jogo> getlista(){
