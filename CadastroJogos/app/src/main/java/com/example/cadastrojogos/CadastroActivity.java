@@ -27,6 +27,7 @@ public class CadastroActivity extends AppCompatActivity {
         txtestudio = findViewById(R.id.txtestudio);
         txtano = findViewById(R.id.txtano);
         txtplataforma = findViewById(R.id.txtplataforma);
+        btnAdd = findViewById(R.id.btnAdd);
 
        btnAdd.setOnClickListener(new View.OnClickListener() {
            @Override

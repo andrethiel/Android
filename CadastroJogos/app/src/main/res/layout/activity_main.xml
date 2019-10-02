@@ -15,7 +15,7 @@
         android:text="Novo jogo" />
 
     <ListView
-        android:id="@+id/listaJogos"
+        android:id="@+id/listarJogos"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="10dp" />

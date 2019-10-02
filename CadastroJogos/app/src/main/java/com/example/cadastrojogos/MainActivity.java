@@ -1,11 +1,11 @@
 package com.example.cadastrojogos;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.lifecycle.ViewModelProvider;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
@@ -13,7 +13,7 @@ import android.widget.ListView;
 public class MainActivity extends AppCompatActivity {
 
     Button btnAdd;
-    ListView listaJogos;
+    ListView listarJogos;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +21,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         btnAdd = findViewById(R.id.btnAdd);
-        listaJogos = findViewById(R.id.listaJogos);
+        listarJogos = findViewById(R.id.listarJogos);
+
 
         btnAdd.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -30,11 +31,26 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        if(ListaJogos.getlista().size() == 0){
+            ListaJogos.gerarLista();
+        }
+
         ArrayAdapter<Jogo> adapter = new ArrayAdapter<Jogo>(
                 MainActivity.this,
                 android.R.layout.simple_list_item_1,
                 ListaJogos.getlista()
         );
-        listaJogos.setAdapter(adapter);
+        listarJogos.setAdapter(adapter);
+
+
+
+        listarJogos.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
+               Intent carregar = new Intent(MainActivity.this, DetalhesActivity.class);
+               carregar.putExtra("index", position);
+               startActivity(carregar);
+            }
+        });
     }
 }

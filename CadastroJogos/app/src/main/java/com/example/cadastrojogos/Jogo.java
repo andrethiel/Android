@@ -45,8 +45,8 @@ public class Jogo {
         this.plataforma = plataforma;
     }
 
-    public String tostring(){
-        return "Titulo" + this.titulo;
+    public String toString(){
+        return "Titulo: " + this.titulo + " Ano: (" + this.ano + ")";
     }
 }
 
