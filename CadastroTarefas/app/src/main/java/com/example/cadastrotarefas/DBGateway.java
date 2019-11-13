@@ -10,8 +10,16 @@ public class DBGateway {
 
     public DBGateway(Context context) {
 
-        DBHelper
         DBHelper helper = new DBHelper(context);
         db = helper.getWritableDatabase();
+    }
+    public static DBGateway getInstance(Context context){
+        if(gateway == null) {
+            gateway = new DBGateway(context);
+        }
+        return gateway;
+    }
+    public SQLiteDatabase getDatabase(){
+        return this.db;
     }
 }
