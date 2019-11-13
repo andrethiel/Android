@@ -21,6 +21,22 @@ public class MainActivity extends AppCompatActivity {
         btnAdd = findViewById(R.id.btnAdd);
         rclTarefas = findViewById(R.id.rclTarefas);
 
+        if(ListaTarefas.getLista().size() > 0){
+            ListaTarefas.getLista().clear();
+        }
+
+        TarefasDAO dao = new TarefasDAO(MainActivity.this);
+
+        try{
+            dao.listaTarefas();
+        }
+        catch(Exception e){
+
+            e.printStackTrace();
+        }
+
+
+
         btnAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
