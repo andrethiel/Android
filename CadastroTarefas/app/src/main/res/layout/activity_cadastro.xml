@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Cadastro">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nova Tarefa"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/txtTarefa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp"
+        android:layout_marginBottom="15sp"
+        android:ems="10"
+        android:hint="Tarefa"/>
+    <EditText
+        android:id="@+id/txtPrioridade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp"
+        android:layout_marginBottom="15sp"
+        android:ems="10"
+        android:hint="Prioridade"/>
+    <EditText
+        android:id="@+id/txtTempoEstimado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp"
+        android:layout_marginBottom="15sp"
+        android:ems="10"
+        android:hint="Tempo Estimado"/>
+
+    <Button
+        android:id="@+id/btnSalvar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_margin="10sp"
+        android:text="Cadastrar tarefa"
+        android:textSize="24sp" />
+
+</LinearLayout>
