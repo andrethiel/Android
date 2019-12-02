@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20sp"
+    tools:context=".Cadastro">
+
+    <TextView
+        android:id="@+id/txtCad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10sp"
+        android:text="Novo Produto"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/edtProduto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:ems="10"
+        android:hint="Produto" />
+
+    <EditText
+        android:id="@+id/edtMarca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:ems="10"
+        android:hint="Marca" />
+
+    <EditText
+        android:id="@+id/edtQuantidade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:ems="10"
+        android:hint="Quantidade"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btnSalvar"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_margin="20sp"
+        android:layout_marginBottom="15sp"
+        android:padding="15sp"
+        android:text="Salvar"
+        android:textSize="18sp" />
+
+</LinearLayout>

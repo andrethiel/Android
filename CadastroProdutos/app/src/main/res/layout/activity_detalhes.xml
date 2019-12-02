@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Detalhes">
+
+    <TextView
+        android:id="@+id/txtDetalhes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15sp"
+        android:text="Detalhes"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtVerProduto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15sp"
+        android:text="Produto: " />
+
+    <TextView
+        android:id="@+id/txtVerMarca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15sp"
+        android:text="Marca: " />
+
+    <TextView
+        android:id="@+id/txtVerQuantidade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15sp"
+        android:text="Quantidade: " />
+
+    <Button
+        android:id="@+id/btnEditar"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_margin="15sp"
+        android:backgroundTint="#00BCD4"
+        android:text="Editar Produto"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btnConcluir"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_margin="15sp"
+        android:backgroundTint="#94FF5722"
+        android:text="Excluir Produto"
+        android:textSize="24sp" />
+</LinearLayout>
